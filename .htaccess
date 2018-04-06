@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST}   !^www\.pehshuwei\.me [NC]
+RewriteCond %{HTTP_HOST}   !^$
+RewriteCond %{SERVER_PORT} !^80$
+RewriteRule ^/(.*)         http://www.pehshuwei.me:%{SERVER_PORT}/$1 [L,R]
+
+
+RewriteRule ^home src/sw_home.html [NC,L]
