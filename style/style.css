@@ -377,15 +377,11 @@ a.button:hover::before, a.button:focus::before{
 	padding-bottom: 2px;
     -webkit-transition: all 300ms ease;
 }
-#project-sub video, #project-sub img{
-	width: 80%;
-	
-	transition: transform 300ms ease-in-out;
+#project-sub video{
+	width: 90%;
 }
-#project-sub video:hover{
-	box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.64);
-	transform:scale(1.15);
-	transition: transform 300ms ease-in-out;
+#project-sub img{
+	width: 70%;
 }
 #project-sub ol, #project-sub ul{
 	color: #4DB6AC;
@@ -556,8 +552,9 @@ a.button:hover::before, a.button:focus::before{
 	#about .content, 
 	#project .content,
 	#project-sub .content,
-	#contact .content{
-		padding: 15% 10%;
+	#contact .content，
+	#home .content{
+		padding: 15% 7%;
 	}
 	nav .nav-mobile a{
 		padding: 0px 30px;
@@ -565,9 +562,6 @@ a.button:hover::before, a.button:focus::before{
 	/* home */
 	#home p{
 		margin: 40px 0;
-	}
-	#home .content{
-		padding: 30% 10%;
 	}
 	.intro{
 		font-size: 30px;
@@ -630,12 +624,6 @@ a.button:hover::before, a.button:focus::before{
 		opacity: 1;
 		transform: translateY(0px);
 	}
-	/* project-sub */	
-	#project-sub video:hover{
-		box-shadow: 0;
-		transform:scale(0);
-		transition: none;
-	}
 	/* contact */
 	#contact .mask-text{
 		font-size: 4em;
@@ -648,7 +636,7 @@ a.button:hover::before, a.button:focus::before{
 
 
 @media (max-width: 360px) {
-		/* structure */
+	/* structure */
 	#home .content, 
 	#about .content, 
 	#project .content,
@@ -658,6 +646,13 @@ a.button:hover::before, a.button:focus::before{
 	}
 	nav .nav-mobile a{
 		padding: 0px 20px;
+	}
+	/* home */
+	.intro{
+		font-size: 25px;
+	}
+	.introsub{
+		font-size: 15px;
 	}
 	/* projects */
 	.project-card{
