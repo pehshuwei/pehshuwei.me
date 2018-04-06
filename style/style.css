@@ -157,26 +157,34 @@ nav .nav-mobile a:hover i, nav .nav-mobile .active i{
 }
 
 /* home */
-#home p{
-	line-height: normal;
-	margin: 20px 0;
+#home .content{
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
 }
 .intro{
-	font-size: 50px;
-	font-weight: bold;
+	width: 100%;
+	font-size: 2em;
+	letter-spacing: .05em;
+	padding-bottom: .3em;
 }
 .name{
+	width: 100%;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 700;
 	color: #FF5252;
-	font-size: 2em;
+	font-size: 7em;
 }
 .introsub{
-	font-size: 40px;
+	font-size: 2em;
 	width: 15em;
 	-webkit-animation: typing 3s steps(21, end),
     					blink-caret .5s step-end infinite alternate;
 }
 .introbtn{
 	margin-top: 100px;
+	width: 100%;
 }
 a.button{
 	position:relative;
@@ -533,8 +541,11 @@ a.button:hover::before, a.button:focus::before{
 		padding: 15% 5%;
 	}
 	/* home */
-	.introsub{
-		font-size: 30px;
+	.intro, .introsub{
+		font-size: 1.7em;
+	}
+	.name{
+		font-size: 6em;
 	}
 	/* projects */
 	.project-card
@@ -549,25 +560,25 @@ a.button:hover::before, a.button:focus::before{
 
 @media (max-width: 540px) {
 	/* structure */
+	#home .content, 
 	#about .content, 
 	#project .content,
 	#project-sub .content,
-	#contact .content，
-	#home .content{
-		padding: 15% 7%;
+	#contact .content{
+		padding: 15% 5%;
 	}
 	nav .nav-mobile a{
 		padding: 0px 30px;
 	}
 	/* home */
-	#home p{
-		margin: 40px 0;
+	.intro, .introsub{
+		font-size: 1.2em;
 	}
-	.intro{
-		font-size: 30px;
+	.name{
+		font-size: 4.5em;
 	}
-	.introsub{
-		font-size: 20px;
+	a.button{
+		padding: 8px 20px;
 	}
 	/* about */
 	#about h1{
@@ -634,25 +645,16 @@ a.button:hover::before, a.button:focus::before{
 	}
 }
 
-
 @media (max-width: 360px) {
-	/* structure */
-	#home .content, 
-	#about .content, 
-	#project .content,
-	#project-sub .content,
-	#contact .content{
-		padding: 15% 5%;
-	}
 	nav .nav-mobile a{
 		padding: 0px 20px;
 	}
 	/* home */
-	.intro{
-		font-size: 25px;
+	.intro, .introsub{
+		font-size: 1em;
 	}
-	.introsub{
-		font-size: 15px;
+	.name{
+		font-size: 4em;
 	}
 	/* projects */
 	.project-card{
