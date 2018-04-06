@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PEH SHU WEI</title>
+	<meta name="description" content="Peh Shu Wei. A web developer from Malaysia.">
+	<meta name="keywords" content="web developer, front-end, html, css, php">
+	<meta name="author" content="Peh Shu Wei">
+	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=yes">
+	<link rel="stylesheet" type="text/css" href="../style/style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+	<link rel="manifest" href="../favicon/site.webmanifest">
+	<link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#2b5797">
+	<meta name="theme-color" content="#ffffff">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117101196-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-117101196-1');
+	</script>
+</head>
+<body>
+	<!-- nav bar -->
+	<nav>
+		<!-- mobile nav bar -->
+		<div class="nav-mobile">
+			<a href="sw_home.html"><i class="material-icons">home</i></a>
+			<a href="sw_about.html"><i class="material-icons">face</i></a>
+			<a href="sw_project.html" class="active"><i class="material-icons">code</i></a>
+			<a href="sw_contact.html"><i class="material-icons">mail</i></a>
+		</div>
+
+		<!-- normal nav bar -->
+		<div class="nav-pc">
+			<h4>FOLDERS</h4>
+			<a href="sw_home.html">
+				<i class="material-icons">keyboard_arrow_down</i><i class="material-icons">folder_open</i>&nbsp;&nbsp;Home
+			</a>
+			<a href="sw_about.html">
+				&emsp;&emsp;<i class="material-icons">face</i>&nbsp;&nbsp;About
+			</a>
+			<a href="sw_project.html" class="active">
+				&emsp;&emsp;<i class="material-icons">code</i>&nbsp;&nbsp;Projects
+			</a>
+			<a href="sw_contact.html">	
+				&emsp;&emsp;<i class="material-icons">mail</i>&nbsp;&nbsp;Hello
+			</a>
+		</div>
+	</nav>
+	<!-- page -->
+	<div class="page">
+		<!-- tab -->
+		<div class="tab-container">
+			<div class="tab">
+				<div class="tri-btmright"></div>
+				<div class="rectangle"><span>Projects</span><a href="sw_home.html"><i class="material-icons">clear</i></a></div>
+				<div class="tri-btmleft"></div>
+			</div>
+		</div>
+		<!-- container -->
+		<div id="project-sub" class="container">
+			<div class="content fade">
+
+				<!-- content start -->
+				<h1 class="title">LEDs Pixel Display <span>#ESPresso Lite V2.0, #IoT, #C, #HTML, #CSS</span></h1>
+				<img src="../img/pixeldisplay_img1.jpg">
+				<!-- intro -->
+				<p>A 10x10 pixels IoT display that can be controlled through a webpage.</p>
+				<p>The time when I am thinking to try a microcontroller based project. An idea after we saw <a href="https://create.arduino.cc/projecthub/pix3lot/pac-man-led-pixel-panel-costume-515666?f=1" target="_blank" rel="noopener">Pac-Man LED Pixel Panel Costume</a>, it is then developed as 10x10 pixels IoT display because it will be easier for the staff to change the content of display without editing the code manually. <a href="https://github.com/pehshuwei/leds-pixel-display" target="_blank" rel="noopener">GitHub</a>.</p>
+				<br>
+
+				<!-- how does it work? -->
+				<h2>How does it work?</h2>
+				<ol>
+					<li><span>Connect to the wifi that the display connected to.</span></li>
+					<li><span>Open browser.</span></li>
+					<li><span>Go to pixeldisplay.local/, and you will see a webpage.</span><br><img src="../img/pixeldisplay_img2.jpg"></li>
+					<li><span>Click the function that you want it to display.</span></li>
+				</ol>
+				<br>
+
+				<!-- main functions -->
+				<h2>The 3 main functions that can be display are</h2>
+				<ul>
+					<li><span>Built-in image sets such as Pacman, Mario, and Chessboard</span></li>
+					<li><span>Temperature and weather</span></li>
+					<li><span>Text</span></li>
+				</ul>
+				<br>
+
+				<!-- materials -->
+				<h2>Materials</h2>
+				<ul>
+					<li><span>ESPresso Lite V2.0</span></li>
+					<li><span>12mm DC5V WS2811 Individually Addressable LEDs (Strings of 50)</span></li>
+					<li><span>5V Power Supply adapter</span></li>
+					<li><span>3mm Acrylic plate - A3</span></li>
+					<li><span>1/8" CardBoard - A3 (3mm)</span></li>
+					<li><span>Acrylic Door Hinge</span></li>
+					<li><span>Magnetic Door Catch</span></li>
+					<li><span>Solvent cement</span></li>
+				</ul>
+				<br>
+
+				<!-- plan & build -->
+				<h2>Plan &amp; Build</h2>
+				<!-- leds arrangment -->
+				<h3>LEDs Arrangement</h3>
+				<p>This project using WS2811 LEDs string because it is individually addressable. I got it from online marketplace with lower price, one string got 50 LEDs, so I bought 2 of it.</p>
+				<img src="../img/pixeldisplay_img3.jpg">
+				<p>The LEDs arrangement is designed to be horizontal zig-zag in this project. Good tips from <a href="https://create.arduino.cc/projecthub/pix3lot/pac-man-led-pixel-panel-costume-515666?f=1" target="_blank" rel="noopener">Pac-Man LED Pixel Panel Costume</a>, plotting the pixel image in <a href="https://docs.google.com/spreadsheets/d/1khFVx5b309IjEXjjUupYW8sXSGuAF8kGiD6vhSlXfAU/edit#gid=0" target="_blank" rel="noopener">spreadsheet</a> make your coding phases easier.</p>
+				<br>
+				<!-- case -->
+				<h3>The Case</h3>
+				<p>The case is designed to be 10x10 pixels. The case is divided into <b>two parts</b>, one part to form those pixels and the other side to hide those cables and board. The <b>front cover</b> made of 3mm transparent acrylic board and drafting paper, <b>slats</b> and <b>divider</b> in between made of 3mm white acrylic board, and the <b>"bones" to form those pixels</b> made of 3mm cardboard.</p>
+				<br>
+				<!-- laser cut -->
+				<h3>Laser Cut</h3>
+				<p>This project is done during my internship, very lucky that <a href="http://www.pscpen.com/"  target="_blank" rel="noopener">Penang Science Cluster</a> has their own laser cut machine. The files for laser cutting machine designed in Adobe Illustrator.</p>
+				<img src="../img/pixeldisplay_img4.jpg">
+				<p>A layman's planning file. Anyway, this is the planning of the middle part of the case. The blue lines are for calculating purpose, and the black lines are the cutting lines.</p>
+				<p>You can get the laser cut folder from <a href="https://github.com/pehshuwei/leds-pixel-display/tree/master/laser_cut" target="_blank" rel="noopener">here</a>.</p>
+				<br>
+				<!-- installation -->
+				<h3>Installation</h3>
+				<img src="../img/pixeldisplay_img5.jpg">
+				<p>After the horizontal and vertical "bones" are cut and slide into each other.</p>
+				<img src="../img/pixeldisplay_img6.jpg">
+				<p>After the slats, dividers and "bones" installation. Tada! The case is basically done, but we do not stick the front and back cover until we done the installation for LEDs.</p>
+				<br>
+				<!-- leds installation -->
+				<h3>Installation for LEDs</h3>
+				<p>The LEDs are then installed following the planned arrangement.</p>
+				<img src="../img/pixeldisplay_img7.jpg">
+				<p>Used hot glue to stick those LEDs to prevent them from falling and caused flickering.</p>
+				<img src="../img/pixeldisplay_img8.jpg">
+				<p>Connect both of the strings together. Place the wires neatly so that it looks clean and you will save some spaces.</p>
+				<img src="../img/pixeldisplay_img9.jpg">
+				<p>Run some skethes to make sure the LEDs is working well and check the structure of the pixels parts before placing the front cover.</p>
+				<br>
+				<!-- front cover -->
+				<h3>Front Cover</h3>
+				<img src="../img/pixeldisplay_img10.jpg">
+				<p>Not manage to find an acrylic board with the perfect opacity level that I aspect for the cover, so I place a drafting paper first and an transparent acrylic board is then sticking on top.</p>
+				<br>
+
+				<!-- code -->
+				<h2>The Heart</h2>
+				<p>Programmed in C/C++ with Arduino IDE, and some HTML and CSS in between for the webpage. <a href="https://github.com/pehshuwei/leds-pixel-display/tree/master/webserver_combine" target="_blank" rel="noopener">Sketch</a>.</p>
+				<br>
+				<!-- espresso lite v2.0 -->
+				<h3>ESPresso Lite V2.0</h3>
+				<p>In this project, <a href="http://learn.espressolite.com/" target="_blank" rel="noopener">ESPresso Lite V2.0</a> works as the web server for the display because it has the WiFi module. It serves the website to let clients make requests and send the correct codes for display.
+				<br><br>
+				For the basic structure, can refer to <a href="https://tttapa.github.io/ESP8266/Chap01%20-%20ESP8266.html" target="_blank" rel="noopener">A Beginner's Guide to the ESP8266</a>.</p>
+				<br>
+				<!-- built-in image sets -->
+				<h3>Built-in image sets</h3>
+				<p>When "Pacman", "Mario" or "Chessboard" is clicked, the display will display related image set.
+				<br><br>
+				LEDs are controlled by <a href="https://github.com/FastLED/FastLED" target="_blank" rel="noopener">FastLED library</a> for image sets. It is easy to use for beginners.</p>
+				<br>
+				<!-- text -->
+				<h3>Text</h3>
+				<p>For text display, users need to insert text they want the display to display and click "Display". :P
+				<br><br>
+				LEDs are controlled by <a href="https://github.com/AaronLiddiment/LEDText" target="_blank" rel="noopener">LEDText library</a> in this features.</p>
+				<br>
+				<!-- temperature and weather -->
+				<h3>Temperature and Weather</h3>
+				<p>When the "Weather" button is clicked, temperature and icon for current weather will be displayed.
+				<br><br>
+				The data is from <a href="http://openweathermap.org/" target="_blank" rel="noopener">OpenWeatherMap</a> through <a href="http://openweathermap.org/api" target="_blank" rel="noopener">Weather API</a> with <a href="https://arduinojson.org/" target="_blank" rel="noopener">ArduinoJson</a>. Display includes text and weather icons sets, which uses <a href="https://github.com/FastLED/FastLED" target="_blank" rel="noopener">FastLED</a> and <a href="https://github.com/AaronLiddiment/LEDText" target="_blank" rel="noopener">LEDText</a> libraries.</p>
+				<br>
+
+				<!-- closing -->
+				<h2>Closing</h2>
+				<img src="../img/pixeldisplay_img11.jpg">
+				<p>After everything is done, we drilled a hole at the side to place the power jack.</p>
+				<br>
+				<img src="../img/pixeldisplay_img12.jpg">
+				<p>The ESPresso Lite V2.0 is kinda small so it can actually be "clipped" in between LEDs.</p>
+				<br>
+				<!-- closing -->
+				<h3>Back Cover</h3>
+				<img src="../img/pixeldisplay_img13.jpg">
+				<p>The back cover is made to be able to open and close. Used transparent acrylic door hinge and magnetic door catch.</p>
+				<br>
+
+				<p>P.S. A demo video will be upload later.</p>
+				<!-- content end -->
+			</div>
+		</div>
+	</div>
+</body>
+</html>

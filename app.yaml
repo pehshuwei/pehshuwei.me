@@ -1,0 +1,38 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  static_files: index.html
+  upload: index.html
+  expiration: "0m"
+
+- url: /src/(.*\.html)
+  static_files: src/\1
+  upload: src/(.*\.html)
+  expiration: "0m"
+
+- url: /style/(.+)
+  mime_type: text/css
+  static_files: style/\1  
+  upload: style/(.*)
+
+- url: /js/(.+)
+  mime_type: text/javascript
+  static_files: js/\1  
+  upload: js/(.*)
+
+- url: /img/(.+)
+  static_files: img/\1  
+  upload: img/(.*)
+
+- url: /favicon/(.+)
+  static_files: favicon/\1  
+  upload: favicon/(.*)
+
+- url: /video/(.+)
+  mime_type: video/mp4
+  static_files: video/\1
+  upload: video/(.*)
+

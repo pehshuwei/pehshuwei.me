@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PEH SHU WEI</title>
+	<meta name="description" content="Peh Shu Wei. A web developer from Malaysia.">
+	<meta name="keywords" content="web developer, front-end, html, css, php">
+	<meta name="author" content="Peh Shu Wei">
+	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,user-scalable=yes">
+	<link rel="stylesheet" type="text/css" href="style/style.css" />
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#2b5797">
+	<meta name="theme-color" content="#ffffff">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117101196-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-117101196-1');
+	</script>
+</head>
+<body>
+	<!-- nav bar -->
+	<nav>
+		<!-- mobile nav bar -->
+		<div class="nav-mobile">
+			<a href="src/sw_home.html" class="active"><i class="material-icons">home</i></a>
+			<a href="src/sw_about.html"><i class="material-icons">face</i></a>
+			<a href="src/sw_project.html"><i class="material-icons">code</i></a>
+			<a href="src/sw_contact.html"><i class="material-icons">mail</i></a>
+		</div>
+
+		<!-- normal nav bar -->
+		<div class="nav-pc">
+			<h4>FOLDERS</h4>
+			<a href="src/sw_home.html" class="active">
+				<i class="material-icons">keyboard_arrow_down</i><i class="material-icons">folder_open</i>&nbsp;&nbsp;Home
+			</a>
+			<a href="src/sw_about.html">
+				&emsp;&emsp;<i class="material-icons">face</i>&nbsp;&nbsp;About
+			</a>
+			<a href="src/sw_project.html">
+				&emsp;&emsp;<i class="material-icons">code</i>&nbsp;&nbsp;Projects
+			</a>
+			<a href="src/sw_contact.html">	
+				&emsp;&emsp;<i class="material-icons">mail</i>&nbsp;&nbsp;Hello
+			</a>
+		</div>
+	</nav>
+	<!-- page -->
+	<div class="page">
+		<!-- tab -->
+		<div class="tab-container">
+			<div class="tab">
+				<div class="tri-btmright"></div>
+				<div class="rectangle"><span>Home</span><a href="src/sw_home.html"><i class="material-icons">clear</i></a></div>
+				<div class="tri-btmleft"></div>
+			</div>
+		</div>
+		<!-- container -->
+		<div id="home" class="container">
+			<div class="content fade">
+				<!-- start of content -->
+				<p class="intro">
+					Hello,<br> I'm <span class="name"> Shu Wei</span>.
+				</p>
+				<p class="introsub typing">
+					A web developer from Malaysia.
+				</p>
+				<div class="introbtn">
+					<a href="src/sw_contact.html" class="introbtn button">Say Hi</a>
+				</div>
+				<!-- end of content -->
+			</div>
+		</div>
+	</div>
+</body>
+</html>
