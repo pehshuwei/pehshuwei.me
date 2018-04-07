@@ -8,31 +8,38 @@ handlers:
   upload: index.html
   expiration: "0m"
 
-- url: /src/(.*\.html)
-  static_files: src/\1
-  upload: src/(.*\.html)
-  expiration: "0m"
-
-- url: /style/(.+)
+- url: /style/(.*\.css)
   mime_type: text/css
-  static_files: style/\1  
-  upload: style/(.*)
-
-- url: /js/(.+)
-  mime_type: text/javascript
-  static_files: js/\1  
-  upload: js/(.*)
-
-- url: /img/(.+)
-  static_files: img/\1  
-  upload: img/(.*)
+  static_files: style/\1
+  upload: style/(.*\.css)
 
 - url: /favicon/(.+)
   static_files: favicon/\1  
   upload: favicon/(.*)
 
+- url: /img/(.+)
+  static_files: img/\1  
+  upload: img/(.*)
+
 - url: /video/(.+)
   mime_type: video/mp4
   static_files: video/\1
   upload: video/(.*)
+
+- url: /manifest.json
+  mime_type: application/json
+  static_files: manifest.json
+  upload: manifest.json
+
+- url: /(.*)/$
+  mime_type: text/html
+  static_files: src/\1/index.html
+  upload: src/.*/index.html
+  expiration: "0m"
+
+- url: /(.*)$
+  mime_type: text/html
+  static_files: src/\1/index.html
+  upload: src/.*/index.html
+  expiration: "0m"
 
