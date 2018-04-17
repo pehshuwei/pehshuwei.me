@@ -485,6 +485,10 @@ a.button:hover::before, a.button:focus::before {
 	width: 90%;
 }
 
+#pixel-display video {
+	width: 70%;
+}
+
 #project-sub img {
 	width: 70%;
 }
